@@ -270,4 +270,3 @@ def derive_public_addresses(mnemonic: str, passphrase: str, count: int):
         "Ethereum + BNB Smart Chain (EVM, m/44'/60'/0'/0/i)": evm_addresses(seed, count),
         "Solana (m/44'/501'/i'/0')": solana_addresses(seed, count),
     }
-

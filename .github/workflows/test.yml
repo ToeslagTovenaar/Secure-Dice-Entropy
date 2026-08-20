@@ -25,4 +25,3 @@ jobs:
       - name: Verify packaged-source hashes
         if: runner.os == 'Linux'
         run: sha256sum -c SHA256SUMS.txt
-

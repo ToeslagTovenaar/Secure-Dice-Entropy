@@ -17,4 +17,3 @@ test vectors or a clearly disposable mnemonic.
 Only the newest tagged release is intended to receive fixes. Release artifacts must
 include a SHA-256 checksum and pass `python3 dice_entropy.py --self-test` after
 extraction. This software has not undergone a professional independent audit.
-

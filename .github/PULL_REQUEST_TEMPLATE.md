@@ -9,4 +9,3 @@ Describe the change and its security implications.
 - [ ] I ran `python3 dice_entropy.py --self-test`.
 - [ ] Cryptographic changes include independent published test vectors.
 - [ ] The runtime remains dependency-free and contains no networking or telemetry.
-
