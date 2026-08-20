@@ -44,4 +44,3 @@ body:
       label: Expected and actual behavior
     validations:
       required: true
-

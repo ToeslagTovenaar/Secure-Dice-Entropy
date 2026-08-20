@@ -21,7 +21,7 @@ standard library, works offline, and asks guided questions when launched.
 4. Extract the ZIP in Tails' temporary storage and open Terminal there.
 5. Run `sha256sum -c SHA256SUMS.txt`.
 6. Run `python3 dice_entropy.py --self-test`.
-7. Run `./run-on-tails.sh` and answer the guided questions.
+7. Run `sh run-on-tails.sh` and answer the guided questions.
 8. For dice mode, record every roll in order. If mathematically rejected, roll a whole
    fresh batch. Do not discard outcomes merely because they look unusual.
 9. Verify the mnemonic backup twice and compare addresses on the intended hardware
@@ -31,7 +31,7 @@ standard library, works offline, and asks guided questions when launched.
 Advanced example:
 
 ```bash
-./run-on-tails.sh --mode dice --words 24 --addresses 3
+sh run-on-tails.sh --mode dice --words 24 --addresses 3
 ```
 
 Roll counts: 12 words = 52, 15 = 64, 18 = 77, 21 = 90, 24 = 102. These
@@ -56,7 +56,7 @@ loaded die, deterministic rolling technique, or compromised observation process.
 Choose the system option in the wizard or run:
 
 ```bash
-./run-on-tails.sh --mode system --words 24 --addresses 3
+sh run-on-tails.sh --mode system --words 24 --addresses 3
 ```
 
 This calls Python `secrets.token_bytes(32)`, which obtains bytes from the operating
@@ -82,7 +82,7 @@ can differ, so verify the first address on the actual recovery wallet before fun
 The wizard can optionally write an owner-only secret TXT, or use:
 
 ```bash
-./run-on-tails.sh --mode dice --words 24 --addresses 3 --export recovery.txt
+sh run-on-tails.sh --mode dice --words 24 --addresses 3 --export recovery.txt
 ```
 
 The report is created new with requested Unix mode `0600`, refuses symlinks where
@@ -120,4 +120,3 @@ in an issue, pull request, screenshot, test, or log.
 Every passphrase creates a valid wallet; a typo opens a different empty wallet. Loss
 means permanent loss of access. The passphrase is used only to derive displayed
 addresses and is never written to the TXT report. Back it up separately.
-

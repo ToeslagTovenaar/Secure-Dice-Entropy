@@ -3,4 +3,3 @@ contact_links:
   - name: Private security report
     url: https://github.com/ToeslagTovenaar/Secure-Dice-Entropy/security/advisories/new
     about: Privately report entropy, secret-exposure, derivation, or code-execution vulnerabilities.
-

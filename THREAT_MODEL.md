@@ -30,4 +30,3 @@
 Biased entropy can reduce brute-force resistance. Incorrect derivation can make funds
 appear missing. Disclosure of a mnemonic plus its optional passphrase permits theft.
 Loss of either required recovery component can permanently destroy access.
-

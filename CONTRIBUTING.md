@@ -15,4 +15,3 @@ Before submitting a change:
 Changes to entropy conversion, BIP-39 encoding, key derivation, file creation, or
 dependency policy require focused security review. Statistical “quality tests” must
 never silently reject valid user entropy.
-

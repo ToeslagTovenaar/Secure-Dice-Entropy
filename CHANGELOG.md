@@ -10,4 +10,3 @@
 - Added published-vector tests, security policy, threat model, and contributor guidance.
 
 This release is experimental and has not undergone a professional independent audit.
-
