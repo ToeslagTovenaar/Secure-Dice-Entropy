@@ -1,0 +1,47 @@
+name: Bug report
+description: Report a reproducible defect using disposable test data only
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never submit a real mnemonic, passphrase, dice sequence, private key, secret
+        report, screenshot of a secret, or funded-address relationship.** Use only the
+        published test vectors or a clearly disposable test mnemonic.
+  - type: checkboxes
+    id: secrets
+    attributes:
+      label: Secret-data confirmation
+      options:
+        - label: I confirm this report contains no real or funded recovery material.
+          required: true
+        - label: This is not an undisclosed security vulnerability.
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v1.2.1 or commit SHA
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Tails, Other Linux, Windows, macOS, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps with disposable data
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+
