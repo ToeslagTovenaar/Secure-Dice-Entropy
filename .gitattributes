@@ -1,0 +1,5 @@
+# Security-sensitive files are hashed byte-for-byte. Keep checkout bytes stable.
+* text=auto eol=lf
+*.sh text eol=lf
+english.txt text eol=lf
+SHA256SUMS.txt text eol=lf
