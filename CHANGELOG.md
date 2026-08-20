@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.2.2 — 2026-08-20
+
+- Restored byte-exact canonical BIP-39 wordlist publication.
+- Added `.gitattributes` so Windows and Linux check out identical hashed files.
+- Refreshed the internal source checksum manifest.
+- Changed Tails commands to `sh run-on-tails.sh` so ZIP executable bits are irrelevant.
+- Verified the full test matrix on Ubuntu and Windows with Python 3.11 and 3.13.
+
 ## v1.2.1 — 2026-08-20
 
 - Added a guided interactive workflow.
